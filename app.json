@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "ICKC",
+    "slug": "ickc",
+    "version": "2.3.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "ickc",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ickc.app",
+      "buildNumber": "31",
+      "infoPlist": {
+        "NSCameraUsageDescription": "ICKC needs access to your camera to take photos for your profile.",
+        "NSPhotoLibraryUsageDescription": "ICKC needs access to your photo library to select profile pictures.",
+        "NSLocationWhenInUseUsageDescription": "ICKC needs your location to find nearby mosques and prayer times."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0E1A",
+        "foregroundImage": "./assets/images/icon.png"
+      },
+      "package": "com.ickc.app",
+      "versionCode": 31,
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0A0E1A",
+          "dark": {
+            "backgroundColor": "#0A0E1A"
+          }
+        }
+      ],
+      "expo-web-browser",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
